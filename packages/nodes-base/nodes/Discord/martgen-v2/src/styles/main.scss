@@ -1,0 +1,74 @@
+@use 'variables' as *;
+
+// Global reset and base styles
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+#app {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: $font-family;
+	font-size: $font-size-md;
+	line-height: $line-height-normal;
+	color: $color-text;
+	background-color: $color-bg-secondary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Scrollbar styling
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: $color-bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $color-border;
+	border-radius: $radius-full;
+
+	&:hover {
+		background: $color-border-dark;
+	}
+}
+
+// Selection color
+::selection {
+	background-color: $color-primary-bg;
+	color: $color-primary;
+}
+
+// Focus outline
+:focus-visible {
+	outline: 2px solid $color-primary;
+	outline-offset: 2px;
+}
+
+// Ant Design overrides
+.ant-btn-primary {
+	background-color: $color-primary !important;
+	border-color: $color-primary !important;
+
+	&:hover {
+		background-color: $color-primary-hover !important;
+		border-color: $color-primary-hover !important;
+	}
+}
+
+.ant-menu-item-selected {
+	background-color: $color-primary-bg !important;
+	color: $color-primary !important;
+}

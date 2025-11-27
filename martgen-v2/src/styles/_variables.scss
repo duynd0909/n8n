@@ -1,0 +1,143 @@
+// ===========================================
+// Color Palette
+// ===========================================
+
+// Primary Colors
+$color-primary: #ff5b00;
+$color-primary-hover: #e65200;
+$color-primary-active: #cc4a00;
+$color-primary-bg: #fff2eb;
+$color-primary-bg-hover: #ffe4d6;
+
+// Status Colors
+$color-success: #52c41a;
+$color-success-bg: #f6ffed;
+$color-warning: #faad14;
+$color-warning-bg: #fffbe6;
+$color-error: #ff4d4f;
+$color-error-bg: #fff2f0;
+$color-info: #1890ff;
+$color-info-bg: #e6f7ff;
+
+// Text Colors
+$color-text: #262626;
+$color-text-secondary: #8c8c8c;
+$color-text-disabled: #020101;
+$color-text-inverse: #ffffff;
+
+// Background Colors
+$color-bg: #ffffff;
+$color-bg-secondary: #f5f5f5;
+$color-bg-canvas: #f0f2f5;
+$color-bg-hover: #fafafa;
+
+// Border Colors
+$color-border: #d9d9d9;
+$color-border-light: #f0f0f0;
+$color-border-dark: #bfbfbf;
+
+// Node Type Colors (from WORKFLOW_DEVELOPMENT_PLAN.md)
+$node-color-postgres: #336791;
+$node-color-elasticsearch: #00bfb3;
+$node-color-transform: #ff5b00;
+$node-color-if: #9254de;
+$node-color-switch: #722ed1;
+$node-color-loop: #eb6f00;
+$node-color-schedule: #13c2c2;
+$node-color-manual: #52c41a;
+
+// Node Design Variables
+$node-border-color: #E5E7EB;
+$node-bg-disabled: #F7F8FA;
+$node-text-color: #1F2937;
+$node-handle-color: #9CA3AF;
+$node-action-bg-hover: #F3F4F6;
+
+// ===========================================
+// Spacing
+// ===========================================
+$spacing-3xs: 2px;
+$spacing-2xs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+$spacing-3xl: 64px;
+
+// ===========================================
+// Typography
+// ===========================================
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+$font-size-3xs: 10px;
+$font-size-2xs: 11px;
+$font-size-xs: 12px;
+$font-size-sm: 13px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-2xl: 20px;
+$font-size-3xl: 24px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+
+// ===========================================
+// Border Radius
+// ===========================================
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-node: 10px; // Node-specific radius
+$radius-xl: 12px;
+$radius-full: 9999px;
+
+// ===========================================
+// Shadows
+// ===========================================
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+$shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+$shadow-focus: 0 0 0 2px $color-primary-bg;
+
+// Node-specific shadows
+$shadow-node: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+$shadow-node-hover: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-node-selected: 0 0 0 3px rgba(24, 144, 255, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-node-actions: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+// ===========================================
+// Transitions
+// ===========================================
+$transition-fast: 0.15s ease;
+$transition-normal: 0.2s ease;
+$transition-slow: 0.3s ease;
+
+// ===========================================
+// Z-Index
+// ===========================================
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+$z-modal-backdrop: 400;
+$z-modal: 500;
+$z-popover: 600;
+$z-tooltip: 700;
+
+// ===========================================
+// Layout
+// ===========================================
+$topbar-height: 64px;
+$sidebar-width: 240px;
+$sidebar-collapsed-width: 72px;
+$rightpanel-width: 360px;

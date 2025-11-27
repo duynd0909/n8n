@@ -1,6 +1,6 @@
 # Dynamic Workflow System Development Plan
 
-**Tech Stack:** Spring Boot (Java 17) + Vue 3
+**Tech Stack:** Spring Boot (Java 17) + Vue 3 + Ant Design Vue + Vue Flow
 **Reference:** n8n workflow architecture
 **Focus:** Synchronize and transform data between Elasticsearch and PostgreSQL
 
@@ -2439,7 +2439,65 @@ Use these files as reference for implementation details:
 
 ## 9. Design Principles
 
-### 9.1 Color Palette
+### 9.1 Layout Specification
+
+#### 9.1.1 Overall Frame
+
+**Header height:** 64px
+**Sidebar width:** 72px collapsed, 240px expanded
+
+```text
++--------------------------------------------------------------------------------+
+| [LOGO]  Workflows / My First Workflow              [Editor] [Executions]  [O]  |
+|                                                     Active   [Save]             |
++--------+-----------------------------------------------------------------------+
+|        |                                                                       |
+|  S     |                                                                       |
+|  I     |                            MAIN CONTENT                               |
+|  D     |                        (Canvas / Table / Settings)                    |
+|  E     |                                                                       |
+|  B     |                                                                       |
+|  A     |                                                                       |
+|  R     |                                                                       |
+|        |                                                                       |
+| [Avatar + User Menu]                                                           |
++--------+-----------------------------------------------------------------------+
+```
+
+#### 9.1.2 Layout Components
+
+**TopBar (64px height)**
+- Left section: Logo + Breadcrumb (Workflows / Workflow Name)
+- Center section: Segmented control tabs ([Editor] [Executions])
+- Right section: Active/Inactive switch + Save button + User avatar menu
+
+**LeftSidebar (72px/240px width)**
+- Collapsible sidebar with smooth transition
+- Expanded: Full menu with labels
+- Collapsed: Icon-only view with tooltips
+- Toggle button at bottom
+
+**Main Content Area**
+- Flex: 1 (takes remaining space)
+- Contains workflow canvas or execution table
+- Background: `#f0f2f5`
+
+**RightPanel (360px width)**
+- Sliding panel from right
+- Contains node palette
+- Fixed position with backdrop overlay
+
+#### 9.1.3 SCSS Variables
+
+```scss
+// Layout dimensions
+$topbar-height: 64px;
+$sidebar-width: 240px;
+$sidebar-collapsed-width: 72px;
+$rightpanel-width: 360px;
+```
+
+### 9.2 Color Palette
 
 | Role | Color | Hex | Usage |
 |------|-------|-----|-------|
